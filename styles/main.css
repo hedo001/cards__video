@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  height: 120px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  border-bottom: 2px solid rgb(165, 162, 162);
+  margin-top: 0;
+}
+.header__logo a {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+.header__logo a img {
+  width: 45px;
+  height: 42px;
+}
+.header__links {
+  display: flex;
+  column-gap: 45px;
+  font-size: larger;
+}
+.header__links li a {
+  color: black;
+}
+.header__icons {
+  display: flex;
+  column-gap: 20px;
+  margin-right: 60px;
+}
+.header__icons img {
+  height: 30px;
+  width: 30px;
+}
+.main__page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main__page .heading {
+  width: 700px;
+  margin-top: 30%;
+}
+.main__page .heading h1 {
+  font-size: 45px;
+  font-weight: 650;
+  line-height: 60px;
+  margin-top: 120px;
+}
+.heading img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+.heading__text {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  line-height: 30px;
+  color: grey;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.main__page__search {
+  position: absolute;
+  top: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 70px;
+  width: 55vw;
+  background-color: #fff;
+  box-shadow: 0 -1px 15px 2px rgba(34, 60, 80, 0.2);
+}
+
+.main__page__search--icon {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  height: 100%;
+  width: 100%;
+}
+.main__page__search--icon a img {
+  height: 40px;
+  width: 40px;
+}
+
+.main__page__search--icon input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.main__page__search--icon input::placeholder {
+  font-size: larger;
+}
+.main__page__search button {
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+  background-color: #4c6c3a;
+  cursor: pointer;
+}
+
+.main__page__image {
+  height: 40%;
+  width: 70%;
+}
+.main__page__image img {
+  width: 100%;
+  object-fit: cover;
+}
